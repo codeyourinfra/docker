@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/docker.svg)]() [![Build status](https://travis-ci.org/codeyourinfra/docker.svg?branch=master)](https://travis-ci.org/codeyourinfra/docker)
 
-Ansible role to install Docker.
+Ansible role to install [Docker](https://www.docker.com).
 
 ## Example Playbook
 
@@ -18,6 +18,8 @@ The role requires the *ansible_distribution_release* variable, obtained through 
 ## Build process
 
 The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/docker). During the build, the role is tested by using [Ubuntu Docker images with Python 3](https://hub.docker.com/r/codeyourinfra/python3).
+
+If the build is succeeded, dependent roles may have also its builds triggered, thanks to the [travis-dependent-builds project](https://github.com/stephanmg/travis-dependent-builds). One example is the [Codeyourinfra docker-compose Ansible role](https://galaxy.ansible.com/codeyourinfra/docker_compose).
 
 ## Author Information
 

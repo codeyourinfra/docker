@@ -1,6 +1,6 @@
 galaxy_info:
   author: Gustavo Muniz do Carmo
-  description: Role to install Oracle Java 8
+  description: Role to install Docker
   company: codeyourinfra.today
   license: MIT
 
@@ -13,8 +13,6 @@ galaxy_info:
         - xenial
 
   galaxy_tags:
-    - oracle
-    - java
-    - jdk
+    - docker
   
 dependencies: []

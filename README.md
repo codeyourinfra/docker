@@ -1,6 +1,6 @@
 # docker
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/docker.svg)]() [![Build status](https://travis-ci.org/codeyourinfra/docker.svg?branch=master)](https://travis-ci.org/codeyourinfra/docker)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/docker.svg)](https://github.com/codeyourinfra/docker/releases/latest) [![Build status](https://travis-ci.org/codeyourinfra/docker.svg?branch=master)](https://travis-ci.org/codeyourinfra/docker) [![Ansible Role](https://img.shields.io/ansible/role/29242.svg)](https://galaxy.ansible.com/codeyourinfra/docker) [![Ansible Role downloads](https://img.shields.io/ansible/role/d/29242.svg)](https://galaxy.ansible.com/codeyourinfra/docker)
 
 Ansible role to install [Docker](https://www.docker.com).
 

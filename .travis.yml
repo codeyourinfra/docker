@@ -13,19 +13,11 @@ addons:
     - python-pip
 
 install:
-  - pip install ansible
   - gem install travis
-
-before_script:
-  - docker run --name xenial -d codeyourinfra/python3:xenial
-  - docker run --name bionic -d codeyourinfra/python3:bionic
+  - pip install -r requirements.txt
 
 script:
-  - ansible-playbook tests/test.yml -i tests/inventory
-
-after_script:
-  - docker stop xenial bionic
-  - docker rm xenial bionic
+  - molecule test
 
 after_success:
   - curl -LO https://raw.github.com/stephanmg/travis-dependent-builds/master/trigger.sh

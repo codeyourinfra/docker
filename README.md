@@ -17,9 +17,19 @@ The role requires the *ansible_distribution_release* variable, obtained through 
 
 ## Build process
 
-The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/docker). During the build, the role is tested by using [Ubuntu Docker images with Python 3](https://hub.docker.com/r/codeyourinfra/python3).
+The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/docker). During the build, the role is tested by using [Molecule](https://molecule.readthedocs.io).
 
 If the build is succeeded, dependent roles may have also its builds triggered, thanks to the [travis-dependent-builds project](https://github.com/stephanmg/travis-dependent-builds). One example is the [Codeyourinfra docker-compose Ansible role](https://galaxy.ansible.com/codeyourinfra/docker_compose).
+
+## Test yourself
+
+Inside your [Python virtual environment](https://docs.python.org/3/tutorial/venv.html), run:
+
+`pip install -r requirements.txt`
+
+And then:
+
+`molecule test`
 
 ## Author Information
 

@@ -23,11 +23,15 @@ If the build is succeeded, dependent roles may have also its builds triggered, t
 
 ## Test yourself
 
-Inside your [Python virtual environment](https://docs.python.org/3/tutorial/venv.html), run:
+First of all, create your [Python virtual environment](https://docs.python.org/3/tutorial/venv.html) and activate it:
 
-`pip install -r requirements.txt`
+`python -m venv env && source env/bin/activate`
 
-And then:
+After that, install all requirements:
+
+`pip install wheel && pip install -r requirements.txt`
+
+Finally, execute the test:
 
 `molecule test`
 

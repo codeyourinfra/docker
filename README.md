@@ -13,7 +13,7 @@ Ansible role to install [Docker](https://www.docker.com).
     - codeyourinfra.docker
 ```
 
-The role requires the *ansible_distribution_release* variable, obtained through the [gathering facts phase](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#information-discovered-from-systems-facts). So please don't turn off facts.
+The role requires some variables obtained through the [gathering facts phase](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#information-discovered-from-systems-facts). So please don't turn off facts.
 
 ## Build process
 
